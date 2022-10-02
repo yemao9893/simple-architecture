@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部弹框模仿风格-->
+    <style name="CommonBottomSheetDialogStyle" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/commonBottomSheetStyle</item>
+    </style>
+
+    <style name="commonBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!--    正文颜色-->
+    <style name="TextThemePrimary">
+        <item name="android:textColor">@color/primarytext</item>
+        <item name="android:textColorHint">@color/black99A0AD</item>
+    </style>
+</resources>

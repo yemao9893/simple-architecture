@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_radius_16_top">
+
+    <TextView
+        android:id="@+id/tvCommonBottomSheetTitle"
+        style="@style/TextThemePrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="温馨提示"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCommonBottomSheetContent"
+        style="@style/TextThemePrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="十年生死两茫茫，千里孤坟,无处话凄凉"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCommonBottomSheetButtonParent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvCommonBottomSheetTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvCommonBottomSheetTitle" />
+
+    <FrameLayout
+        android:id="@+id/flCommonBottomSheetContent"
+        style="@style/TextThemePrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="十年生死两茫茫，千里孤坟,无处话凄凉"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCommonBottomSheetButtonParent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvCommonBottomSheetTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvCommonBottomSheetTitle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCommonBottomSheetButtonParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnCommonBottomSheetNegative"
+            style="@style/TextThemePrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_common_bottom_sheet_negative"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnCommonBottomSheetPositive"
+            style="@style/TextThemePrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dialog_common_bottom_sheet_positive"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="确定"
+            android:textColor="@color/blue4b"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:background="@drawable/selector_default_click_bg"
+        android:id="@+id/ivCommonClose"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_common_dialog_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

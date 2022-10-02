@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "simple-architecture"
+include ':app'
+include ':libRouter'
+include ':libBasic'
+include ':libNetwork'
+include ':libResouce'
+include ':libStorage'
+include ':libViewFrame'
+include ':message'

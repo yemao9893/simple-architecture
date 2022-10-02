@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="true" expandFrames="true" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.211" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable-hdpi/selector_dialog_common_bottom_sheet_negative.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable-hdpi/selector_dialog_common_bottom_sheet_positive.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable/selector_default_click_bg.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable/selector_dialog_common_bottom_sheet_negative.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable/selector_dialog_common_bottom_sheet_positive.xml" value="0.211" />
+        <entry key="libResouce/src/main/res/drawable/shape_white_radius_16_top.xml" value="0.211" />
+        <entry key="libViewFrame/src/main/res/layout/dialog_common_bottom_sheet.xml" value="0.25104166666666666" />
+        <entry key="libViewFrame/src/main/res/layout/dialog_common_selector.xml" value="0.25104166666666666" />
+        <entry key="libViewFrame/src/main/res/layout/fragment_base.xml" value="0.25104166666666666" />
+        <entry key="libViewFrame/src/main/res/layout/viewframe_activity_quick.xml" value="0.25104166666666666" />
+        <entry key="message/src/main/res/layout/activity_main.xml" value="0.25104166666666666" />
+        <entry key="message/src/main/res/layout/activity_message_home.xml" value="0.25104166666666666" />
+        <entry key="message/src/main/res/layout/message_activity_message_home.xml" value="0.25104166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
