@@ -12,4 +12,8 @@ object RoutePath {
     //*************************** message 模块 *********************************//
     const val MESSAGE_HOME_ACTIVITY = "/message/MessageHomeActivity"
 
+
+    //*************************** dynamic 模块 *********************************//
+    const val DYAMIC_HOME_ACTIVITY = "/dynamic/DynamicHomeFragment"
+
 }

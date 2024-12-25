@@ -36,12 +36,11 @@ class MainActivity : BaseMVVMViewBindActivity<BaseViewModel, ActivityMainBinding
         super.initView()
         LogUtil.d("initView", "initView")
         hideRightTv()
-        clickContext.setTarget(dataBinding.tvHello)
-        dataBinding.tvHello.text = "dataBinding"
-        dataBinding.tvHello.setOnClickListener {
+        clickContext.setTarget(dataBinding.tvMessage)
+        dataBinding.tvMessage.setOnClickListener {
             CommonBottomSheetDialog(this).apply {
-                setContent("哈挖发文额废物恶妇啊好玩饿哦房间号")
-                setNegativeButton(onDialogClickListener = object :
+                setContent("跳转Message Home")
+                setNegativeButton("OK", onDialogClickListener = object :
                     CommonBottomSheetDialog.OnDialogClickListener {
                     override fun onClick(dialog: CommonBottomSheetDialog) {
                         ARouter.getInstance().build(RoutePath.MESSAGE_HOME_ACTIVITY).navigation()

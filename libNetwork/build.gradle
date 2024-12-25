@@ -1,44 +1,15 @@
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
-}
+apply from: "../common_lib_config.gradle"
+
 android {
-    compileSdk rootProject.ext.android["compileSdkVersion"]
-
+    namespace "com.ym.network"
     defaultConfig {
-        minSdk rootProject.ext.android["minSdkVersion"]
-        targetSdk rootProject.ext.android["targetSdkVersion"]
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
         buildConfigField "String","BASE_URL",'"https://www.baitu.com/"'
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 }
 
 dependencies {
 
     api project(path: ':libBasic')
-    rootProject.ext.androidDefaultDependencies.each {
-        k, v -> implementation v
-    }
-    testImplementation rootProject.ext.test["junit"]
-    androidTestImplementation rootProject.ext.test["ext"]
-    androidTestImplementation rootProject.ext.test["espresso"]
-    
     //rxjava
     api 'io.reactivex.rxjava2:rxjava:2.2.19'
     api 'io.reactivex.rxjava2:rxandroid:2.1.1'

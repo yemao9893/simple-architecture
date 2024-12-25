@@ -11,7 +11,7 @@ import com.ym.viewframe.base.viewmodel.BaseViewModel
 class MainViewModel : BaseViewModel() {
     fun getTest() {
         launch({
-            HttpApiHelper.test()
+            val result = HttpApiHelper.test()
         }, isShow = true)
     }
 }

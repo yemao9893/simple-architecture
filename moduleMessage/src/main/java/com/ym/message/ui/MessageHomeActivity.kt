@@ -6,9 +6,17 @@ import com.ym.message.databinding.MessageActivityMessageHomeBinding
 import com.ym.router.RoutePath
 import com.ym.viewframe.base.activity.databinding.BaseMVVMDataBindActivity
 import com.ym.viewframe.base.viewmodel.BaseViewModel
+
 @Route(path = RoutePath.MESSAGE_HOME_ACTIVITY)
-class MessageHomeActivity : BaseMVVMDataBindActivity<BaseViewModel, MessageActivityMessageHomeBinding>() {
+class MessageHomeActivity :
+    BaseMVVMDataBindActivity<BaseViewModel, MessageActivityMessageHomeBinding>() {
     override fun getLayoutId(): Int {
         return R.layout.message_activity_message_home
+    }
+
+    override fun getTitleValue() = "消息"
+    override fun initView() {
+        super.initView()
+        setLeftImageFinish()
     }
 }

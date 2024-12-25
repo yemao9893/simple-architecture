@@ -10,7 +10,7 @@ kapt {
 }
 android {
     compileSdk rootProject.ext.android["compileSdkVersion"]
-
+    namespace "com.ym.architecture"
     defaultConfig {
         applicationId "com.ym.architecture"
         minSdk rootProject.ext.android["minSdkVersion"]
@@ -53,6 +53,6 @@ dependencies {
     implementation rootProject.ext.dependencies.arouter_api
     kapt rootProject.ext.dependencies.arouter_compiler
     implementation project(path: ':libViewFrame')
-    implementation project(path: ':message')
+    implementation project(path: ':moduleMessage')
 
 }

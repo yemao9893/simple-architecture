@@ -3,7 +3,8 @@ apply plugin: 'org.jetbrains.kotlin.android'
 
 
 android {
-    resourcePrefix "message_"
+    namespace 'com.ym.dynamic'
+    resourcePrefix "dynamic_"
 }
 
 dependencies {

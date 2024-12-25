@@ -50,7 +50,7 @@ abstract class QuickActivity : BaseActivity() {
         viewPadding = rootView.findViewById(R.id.viewPadding)
         llContent = rootView.findViewById(R.id.llContent)
         if (getLayoutView() == null) {
-            val child = LayoutInflater.from(this).inflate(getLayoutId(), rootView, true)
+            val child = LayoutInflater.from(this).inflate(layoutResID, rootView, false)
             llContent.addView(child)
         } else {
             llContent.addView(

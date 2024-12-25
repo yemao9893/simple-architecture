@@ -10,7 +10,7 @@ import com.ym.viewframe.base.viewmodel.*
  *@desc: null
  */
 class StatusObserver(var statusView: IStatusView) : Observer<StatusData> {
-    override fun onChanged(t: StatusData?) {
+    override fun onChanged(t: StatusData) {
         when (t) {
             is ShowToast -> {
                 statusView.showMessage(t.message)

@@ -1,15 +1,13 @@
 ext {
     android = [
             minSdkVersion    : 21,
-            compileSdkVersion: 32,
-            targetSdkVersion : 32,
+            compileSdkVersion: 34,
+            targetSdkVersion : 34,
             buildToolsVersion: '30.0.3',
             versionCode      : 1,
             versionName      : '1.0.0',
             kotlin_version   : '1.5.30',
             gradle_plugin    : '7.0.2',
-            arouter          : '1.5.1',
-            arouter_compiler : '1.2.2',
 
     ]
     versions = [
